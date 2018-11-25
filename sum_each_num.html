@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function sum_each_number(arg) { 
+		var len = arg.length;
+		console.log("Input = "+arg+ ": length = "+len);
+		var sum = 0;
+		for(var i=0;i<len;i++) { 
+			sum = sum + Number(arg[i]);
+			console.log("i = "+i+" : Sum = "+ sum);
+		}
+		return sum;
+	}
+
+	var input_n = prompt("input number: ");
+	alert("Your Input = "+input_n+"\n"+"Sum each number = " + sum_each_number(input_n));
+
+</script>
+</body>
+</html>

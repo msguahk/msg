@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>coding test</title>
+</head>
+<body>
+<script type="text/javascript">
+	function mid_str(arg){
+		//var input_str = prompt("Input STring: ");
+		var length = arg.length;
+		console.log(length);
+		var mid = length / 2;
+		var mid_char = mid.toFixed(0)-1; 
+		console.log("mid_char = "+mid_char);
+		if(length %2 == 0 ) {
+			console.log(arg[mid_char]+arg[mid_char+1]);
+			return(arg[mid_char]+arg[mid_char+1]);
+		}
+		else {
+			console.log(arg[mid_char]);
+			return(arg[mid_char]);
+		}
+	}
+
+	var input_str = prompt("Input String: ");
+
+	alert(mid_str(input_str));
+
+</script>
+</body>
+</html>
